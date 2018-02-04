@@ -1,0 +1,233 @@
+.App {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+
+}
+
+.header {
+  height: 15%;
+  width: 100%;
+  background-color: #c9c9c9;
+  position: relative;
+  z-index: 10;
+}
+
+.bigButton {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 13px;
+  margin: auto;
+  outline: none;
+}
+
+.centerButton {
+  width: 20%;
+  height: 25%;
+  left: 40%;
+  top: 30%;
+  position: absolute;
+}
+
+.lockButton {
+  width: 20%;
+  height: 25%;
+  left: 40%;
+  top: 55%;
+  position: absolute;
+}
+
+
+.retardedToddler {
+  width: 15%;
+  height: 40%;
+  position: absolute;
+  left: 17.5%;
+  top: 30%;
+}
+
+.rightRegenButton {
+  width: 15%;
+  height: 30%;
+  position: absolute;
+  right: 17.5%;
+  top: 35%;
+}
+
+
+.tableDiv {
+  margin: auto;
+  height: 100%;
+  width: 100;
+  max-height: 100%;
+  overflow: auto;
+  
+}
+
+.table {
+  margin: auto;
+
+}
+
+.successfulUnlock {
+  background-color: #24ff00;
+}
+
+.noUnlockAttempted {
+  
+}
+
+.unsuccessfulUnlock {
+  background-color: #ff0000;
+}
+
+.outOfRangeUnlock {
+  background-color: #faff00;
+}
+
+
+.carLockStatusLabel {
+  position: absolute;
+  width: 100%;
+  height: 10%;
+  text-align: center;
+  top: 5%;
+  font-size: 18px;
+  /* margin: auto; */
+}
+
+
+.bigbuttonsuccessfulUnlock {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 13px;
+  margin: auto;
+  outline: none;
+  background-color: #24ff00;
+}
+
+.bigbuttonnoUnlockAttempted {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 13px;
+  margin: auto;
+  outline: none;
+}
+
+.bigbuttonunsuccessfulUnlock {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 13px;
+  margin: auto;
+  outline: none;
+  background-color: #ff0000;
+}
+
+.bigbuttonoutOfRangeUnlock {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 13px;
+  margin: auto;
+  outline: none;
+  background-color: #faff00;
+}
+
+
+
+
+
+
+/* 
+
+.tableBody {
+  height: 100px;
+}  */
+
+.keyFob {
+  height: 80%;
+  width: 49.9%;
+  float: left;
+  position: relative;
+  /* background-color: blue; */
+}
+
+.labels {
+  height: 5%;
+  width: 100%;
+  position: relative;
+  border: 0.1px solid black;
+
+}
+
+.keyFobLabel {
+  height: 100%;
+  width: 50%;  
+  position: absolute;
+  left: 0%;
+  text-align: center;
+  top: 25%;
+  
+}
+
+.carLabel {
+  height: 5%;
+  width: 50%; 
+  position: absolute;
+  right: 0%;
+  text-align: center;
+  top: 25%;
+}
+
+.divider {
+  height: 100%;
+  width: 0.1%;
+  float: left;
+  background-color: #cbc6c6;
+  margin-top: -3%;
+  z-index: 5;
+}
+
+.car {
+  height: 80%;
+  width: 49.9%;
+  float: left;
+  position: relative;
+  /* background-color: red; */
+}
+
+/* .App {
+  text-align: center;
+  height: 100%;
+  
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+} */
