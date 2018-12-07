@@ -2,7 +2,9 @@
   "name": "keyfob",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {},
+  "dependencies": {
+    "react-scripts": ">= 5.6.0"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
