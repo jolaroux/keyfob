@@ -53,9 +53,9 @@ export class Header extends Component {
           <button className="bigButton" onClick={this.props.toggleKeyFobRange} disabled={this.props.forceTableRegen}>{this.props.keyFobIsWithinRange ? "Move Key OUT of range" : "Move Key WITHIN range"}</button>
         </div> */}
         
-        {/* simulate retarded toddler */}
-        <div className="retardedToddler" >
-          <button className="bigButton" onClick={this.props.simulateRetardedToddler} disabled={this.props.forceTableRegen}>Simulate out of range unlock attempt</button>
+        {/* simulate antsy toddler */}
+        <div className="antsyToddler" >
+          <button className="bigButton" onClick={this.props.simulateAntsyToddler} disabled={this.props.forceTableRegen}>Simulate out of range unlock attempt</button>
         </div>
         
         {/* attempts unlock  */}

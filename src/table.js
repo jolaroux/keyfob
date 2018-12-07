@@ -19,8 +19,6 @@ export class Table extends Component {
     var colorClassName;
     console.log("STATUS IS " + this.props.unlockStatus)
     
-    //creating the className variable 
-    var colorClassName;
     
     //deciding what the className is 
     switch (this.props.unlockStatus) {
@@ -42,12 +40,12 @@ export class Table extends Component {
     //making note of what index should be colored what 
     var whatIndexShouldBeColored;
     //doing the work 
-    if (this.props.unlockStatus != 3) {
+    if (this.props.unlockStatus !== 3) {
       //if it's not 3 then color the first one 
       whatIndexShouldBeColored = 0;
     } else {
       //if it IS 3 then we need to color the first one if it's the keyFob table and the matching one if it's the car table
-      if (this.props.name == "car") {
+      if (this.props.name === "car") {
         // if this is the car table then color the index that matches whatever the keyFob sent
         whatIndexShouldBeColored = this.props.ifPrevOORindex;
       } else {
@@ -66,7 +64,7 @@ export class Table extends Component {
               <th>Key</th>
             </tr>
             {this.props.keyObject.map(function(r, index) {     //making sure it's mainly just the first one colored
-              return <tr key={"row" + name + r.key} className={(index == whatIndexShouldBeColored) ? colorClassName : "noUnlockAttempted"}>
+              return <tr key={"row" + name + r.key} className={(index === whatIndexShouldBeColored) ? colorClassName : "noUnlockAttempted"}>
                 <td key={name + index + r.key}>
                   {r.index}
                 </td> 

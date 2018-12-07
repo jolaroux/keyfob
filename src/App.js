@@ -34,13 +34,13 @@ class App extends Component {
       )
       
       //see if it needs a table regen 
-      if (this.state.keyObject.length == 0) {
+      if (this.state.keyObject.length === 0) {
         this.setState({forceTableRegen: true})
         
       } else {
         //at this point it has recieved that the key wants to unlock the car 
         //it's going to check whether the keyFob is within range of the car 
-        if (this.state.keyFobIsWithinRange == false) {
+        if (this.state.keyFobIsWithinRange === false) {
           //the keyFob is out of range
           
           this.unsuccessfulUnlock()
@@ -49,7 +49,7 @@ class App extends Component {
           //here the keyFob is within range of the car 
           
           //going to see if the first item on the keyObject matches the first item on the carObject 
-          if (this.state.keyObject[0].key == this.state.carObject[0].key) {
+          if (this.state.keyObject[0].key === this.state.carObject[0].key) {
             
             //this means the keyfob and the car key matches 
             this.successfulUnlock()
@@ -74,7 +74,7 @@ class App extends Component {
     }
     
     //easy button to click to simulate the key being out of range 
-    simulateRetardedToddler = () => {
+    simulateAntsyToddler = () => {
       
 
         //changing the state to unsuccessfulUnlock
@@ -85,12 +85,12 @@ class App extends Component {
         var KeyTable = []
         for (var i = 1; i < this.state.keyObject.length; i++) {
           
-          if (i != 0 ) {
+          if (i !== 0 ) {
             KeyTable[i - 1] = this.state.keyObject[i]
           }
           
         }
-        var forTabReg = KeyTable.length == 0 ? true : false
+        var forTabReg = KeyTable.length === 0 ? true : false
         // a delay to reset the table after the successfulUnlock
         setTimeout(() => {this.setState({ keyObject:KeyTable, unlockStatus:0, canRegenTable: true, forceTableRegen: forTabReg});}, 100)
       }
@@ -109,7 +109,7 @@ class App extends Component {
         var KeyTable = [{}]
         for (var i = 1; i < this.state.keyObject.length; i++) {
           
-          if (i != 0 ) {
+          if (i !== 0 ) {
             KeyTable[i - 1] = this.state.keyObject[i]
           }
           
@@ -138,7 +138,7 @@ class App extends Component {
         KeyTable[i - 1] = this.state.keyObject[i]  
       }
       
-      var forTabReg = KeyTable.length == 0 ? true : false
+      var forTabReg = KeyTable.length === 0 ? true : false
       
       
       // a delay to reset the table after the successfulUnlock
@@ -165,7 +165,7 @@ class App extends Component {
       console.log(KeyTable[0])
       
       //test 
-      var forTabReg = KeyTable.length == 0 ? true : false
+      var forTabReg = KeyTable.length === 0 ? true : false
       
       // a delay to reset the table after the successfulUnlock
       setTimeout(() => {this.setState({keyFobIsWithinRange: true, unlockStatus: 0, keyObject:KeyTable, carObject: KeyTable, canRegenTable: true, forceTableRegen:forTabReg});}, 2000)
@@ -212,7 +212,7 @@ class App extends Component {
       <div className="App">
         
         {/* the header with the buttons  */}
-        <Header unlockStatus={this.state.unlockStatus} attemptUnlock={this.attemptUnlock} toggleKeyFobRange={this.toggleKeyFobRange} regenTable={this.regenTable} keyFobIsWithinRange={this.state.keyFobIsWithinRange} simulateRetardedToddler={this.simulateRetardedToddler} canRegenTable={this.state.canRegenTable} lockCar={this.lockCar} lockStatus={this.state.lockStatus} forceTableRegen={this.state.forceTableRegen}></Header>
+        <Header unlockStatus={this.state.unlockStatus} attemptUnlock={this.attemptUnlock} toggleKeyFobRange={this.toggleKeyFobRange} regenTable={this.regenTable} keyFobIsWithinRange={this.state.keyFobIsWithinRange} simulateAntsyToddler={this.simulateAntsyToddler} canRegenTable={this.state.canRegenTable} lockCar={this.lockCar} lockStatus={this.state.lockStatus} forceTableRegen={this.state.forceTableRegen}></Header>
         
         {/* the labels  */}
         <div className="labels">
